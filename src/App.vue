@@ -1,7 +1,11 @@
 <script>
 import axios from 'axios'
+import ProjectCard from "./components/ProjectCard.vue"
 
 export default {
+    components: {
+        ProjectCard
+    },
     data() {
         return {
             apiUrl: 'http://127.0.0.1:8000/',
@@ -28,8 +32,11 @@ export default {
 </script>
 
 <template>
-    <div>
-
+    <div class="container">
+        <div class="row">
+            <ProjectCard v-for="project in projects" :title="project.title" :image="project.image"
+                :description="project.description" />
+        </div>
     </div>
 </template>
 
