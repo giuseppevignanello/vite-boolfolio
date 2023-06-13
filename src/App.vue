@@ -8,11 +8,12 @@ export default {
             ProjectsPath: 'api/projects',
             projects: [],
         }
-    }, method: {
+    }, methods: {
         getProjects(url) {
             axios.get(url)
                 .then(response => {
-                    console.log(response.data);
+                    this.projects = response.data.projects
+                    console.log(this.projects);
                 })
                 .catch(error => {
                     console.error(error);
@@ -21,7 +22,7 @@ export default {
         }
     }, mounted() {
         const url = this.apiUrl + this.ProjectsPath
-        console.log(url);
+        this.getProjects(url)
     }
 }
 </script>
