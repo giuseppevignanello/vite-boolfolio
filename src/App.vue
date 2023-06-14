@@ -1,10 +1,12 @@
 <script>
 import axios from 'axios'
 import ProjectCard from "./components/ProjectCard.vue"
+import AppHeader from "./components/AppHeader.vue"
 
 export default {
     components: {
-        ProjectCard
+        ProjectCard,
+        AppHeader
     },
     data() {
         return {
@@ -32,11 +34,13 @@ export default {
 </script>
 
 <template>
+    <AppHeader></AppHeader>
     <div class="container">
         <div class="row">
-            <ProjectCard v-for="project in projects" :title="project.title" :image="project.image"
-                :description="project.description" />
+            <ProjectCard v-for="project in  projects " :title="project.title"
+                :image="'http://127.0.0.1:8000/storage/' + project.image" :description="project.description" />
         </div>
+        <router-view></router-view>
     </div>
 </template>
 
