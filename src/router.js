@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import AppHome from "./pages/AppHome.vue";
 import AppAbout from "./pages/AppAbout.vue";
 import AppContacts from "./pages/AppContacts.vue";
-import SingleProject from "./pages/projects/SingleProject.vue";
+import SingleProject from "./pages/SingleProject.vue";
 
 const router = createRouter({
   history: createWebHistory(),
