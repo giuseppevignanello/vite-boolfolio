@@ -2,17 +2,24 @@
 <script>
 
 import { store } from '../store'
+import axios from "axios";
+
 export default {
     name: 'SingleProject',
     data() {
         return {
-            slugParam: '',
+
             store
         }
     },
     mounted() {
-        this.slugParam = this.$route.params.slug
-        this.store.getProjects(this.store.apiUrl + this.store.ProjectsPath)
+        axios.get(`${this.store.apiUrl}${this.store, ProjectsPath}${this.$route.params.slug}`).then((response) => {
+            if (response.data.success) {
+                this.project = response.data.project;
+            } else {
+                this.$router.push({ name: 'not-found' })
+            }
+        });
     }
 }
 </script>
@@ -21,7 +28,7 @@ export default {
         <div class="card text-start">
             <img class="card-img-top" src="" alt="Title">
             <div class="card-body">
-                <h4 class="card-title">Title</h4>
+                <h4 class="card-title">{{ project.title }}</h4>
                 <p class="card-text">Body</p>
             </div>
         </div>
