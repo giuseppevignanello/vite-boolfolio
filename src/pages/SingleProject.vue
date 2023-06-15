@@ -41,7 +41,9 @@ export default {
                 <p> <strong> Start on: </strong> {{ project.start_date }} </p>
                 <ul class="d-flex list-unstyled">
                     <li class="me-2"><strong>Technologies: </strong></li>
-                    <li v-for="technology in project.technologies" class="me-2"> {{ technology.name }}</li>
+                    <li v-for="technology in project.technologies" class="me-2">
+                        <img style="width: 40px;" :src="'http://127.0.0.1:8000/storage/' + technology.image" alt="">
+                    </li>
                 </ul>
             </div>
         </div>

@@ -35,16 +35,18 @@ export default {
     <div>
         <h3>About</h3>
 
-        <h2>My Stack</h2>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-                <div v-for="technology in this.technologies" class="card text-start">
-                    <img class="card-img-top" src="holder.js/100px180/" alt="Title">
-                    <div class="card-body">
-                        <h4 class="card-title">{{ technology.name }}</h4>
-                        <p class="card-text">Body</p>
-                    </div>
-                </div>
+        <h2 class="text-center">My Stack</h2>
+        <div class="container mt-4">
+            <div class="card p-5 shadow">
+                <ul class="d-flex list-unstyled flex-wrap justify-content-center">
+                    <li class="technology" v-for="technology in this.technologies">
+                        <div class="me-5">
+                            <img class="text-center" style="width: 100px;"
+                                :src="'http://127.0.0.1:8000/storage/' + technology.image" alt="">
+                            <p class="text-center"> <strong>{{ technology.name }} </strong> </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

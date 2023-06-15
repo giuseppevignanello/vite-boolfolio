@@ -1,1 +1,8 @@
 @use "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.technology:hover,
+img {
+    scale: 1.1;
+    cursor: pointer;
+}
