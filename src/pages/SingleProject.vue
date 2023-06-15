@@ -30,8 +30,15 @@ export default {
         <div class="card text-start">
             <img class="card-img-top" :src="this.store.apiUrl + 'storage/' + project.image" alt="Title">
             <div class="card-body">
-                <h4 class="card-title">{{ project.title }}</h4>
-                <p class="card-text">Body</p>
+                <h1 class="card-title">{{ project.title }}</h1>
+                <p class="card-text">{{ project.description }}</p>
+                <p v-if="project.status == 'pending'">👨‍💻🚧In progress</p>
+                <p v-else-if="project.status == 'completed'">✅ Completed</p>
+                <p> <strong>Repo Link: </strong><a :href="project.repo_link" target="_blank">{{ project.repo_link }}</a>
+                </p>
+                <p> <strong>View Link: </strong><a :href="project.view_link" target="_blank">{{ project.view_link }}</a>
+                </p>
+                <p> Start on: {{ project.start_date }} </p>
             </div>
         </div>
     </div>
