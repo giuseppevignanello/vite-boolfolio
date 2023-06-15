@@ -3,33 +3,23 @@
 import { store } from "../store"
 import AppLoader from "../components/AppLoader.vue"
 import ProjectCard from '../components/ProjectCard.vue'
+import PageButtons from "../components/PageButtons.vue"
+
 
 
 export default {
     name: 'AppHome',
     components: {
         ProjectCard,
-        AppLoader
+        AppLoader,
+        PageButtons,
     },
     data() {
         return {
             store,
         };
     },
-    methods: {
-        nextPage() {
-            if (this.store.currentPage < this.store.lastPage) {
-                this.store.currentPage++;
-                this.store.getProjects(this.store.apiUrl + this.store.ProjectsPath)
-            }
-        },
-        prevPage() {
-            if (this.store.currentPage > 1) {
-                this.store.currentPage--;
-                this.store.getProjects(this.store.apiUrl + this.store.ProjectsPath)
-            }
-        }
-    },
+
     mounted() {
         this.store.getProjects(this.store.apiUrl + this.store.ProjectsPath)
     },
@@ -37,21 +27,19 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="row">
+    <div class="container my-5">
+        <h1 class="text-center mb-3">All my projects</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-5">
             <ProjectCard v-if="!this.store.loading" v-for="project in  this.store.projects " :title="project.title"
                 :slug="project.slug" :image="'http://127.0.0.1:8000/storage/' + project.image"
                 :description="project.description" />
+
             <AppLoader v-else />
+
+
         </div>
-        <div class="buttons">
-            <div>
-                <i @click="nextPage" class="fa-solid fa-arrow-right"></i>
-            </div>
-            <div>
-                <i @click="prevPage" class="fa-solid fa-arrow-left"></i>
-            </div>
-        </div>
+        <PageButtons />
+
 
     </div>
 </template>

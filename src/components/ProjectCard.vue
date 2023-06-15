@@ -12,9 +12,9 @@ export default {
 </script>
 
 <template>
-    <div class="card">
-        <img style="width: 300px;" class="card-img-top" :src="image" alt="Title">
-        <div class="card-body">
+    <div class="card border-0 align-items-center">
+        <img style="width: 200px;" class="card-img-top shadow" :src="image" alt="Title">
+        <div class="card-body shadow mx-4 mb-4 w-75">
             <h4 class="card-title">{{ title }}</h4>
             <p class="card-text">{{ description }}</p>
             <router-link :to="{ name: 'single-project', params: { slug: slug } }">
