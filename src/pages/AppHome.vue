@@ -1,18 +1,19 @@
 
 <script>
 import { store } from "../store"
-
+import AppLoader from "../components/AppLoader.vue"
 import ProjectCard from '../components/ProjectCard.vue'
 
 
 export default {
     name: 'AppHome',
     components: {
-        ProjectCard
+        ProjectCard,
+        AppLoader
     },
     data() {
         return {
-            store
+            store,
         };
     },
     mounted() {
@@ -24,10 +25,10 @@ export default {
 <template>
     <div class="container">
         <div class="row">
-
-            <ProjectCard v-for="project in  this.store.projects " :title="project.title" :slug="project.slug"
-                :image="'http://127.0.0.1:8000/storage/' + project.image" :description="project.description" />
-
+            <ProjectCard v-if="!this.store.loading" v-for="project in  this.store.projects " :title="project.title"
+                :slug="project.slug" :image="'http://127.0.0.1:8000/storage/' + project.image"
+                :description="project.description" />
+            <AppLoader v-else />
         </div>
 
     </div>
