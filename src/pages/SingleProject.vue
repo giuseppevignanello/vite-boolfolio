@@ -8,7 +8,7 @@ export default {
     name: 'SingleProject',
     data() {
         return {
-            project: null,
+            project: "",
             store
         }
     },
