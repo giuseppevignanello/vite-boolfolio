@@ -16,6 +16,20 @@ export default {
             store,
         };
     },
+    methods: {
+        nextPage() {
+            if (this.store.currentPage < this.store.lastPage) {
+                this.store.currentPage++;
+                this.store.getProjects(this.store.apiUrl + this.store.ProjectsPath)
+            }
+        },
+        prevPage() {
+            if (this.store.currentPage > 1) {
+                this.store.currentPage--;
+                this.store.getProjects(this.store.apiUrl + this.store.ProjectsPath)
+            }
+        }
+    },
     mounted() {
         this.store.getProjects(this.store.apiUrl + this.store.ProjectsPath)
     },
@@ -29,6 +43,14 @@ export default {
                 :slug="project.slug" :image="'http://127.0.0.1:8000/storage/' + project.image"
                 :description="project.description" />
             <AppLoader v-else />
+        </div>
+        <div class="buttons">
+            <div>
+                <i @click="nextPage" class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div>
+                <i @click="prevPage" class="fa-solid fa-arrow-left"></i>
+            </div>
         </div>
 
     </div>

@@ -5,14 +5,18 @@ export const store = reactive({
   apiUrl: "http://127.0.0.1:8000/",
   ProjectsPath: "api/projects",
   projects: [],
+  currentPage: 1,
+  lastPage: 1,
   loading: true,
 
   getProjects(url) {
     axios
-      .get(url)
+      .get(url, { params: { page: this.currentPage } })
       .then((response) => {
         this.loading = false;
-        this.projects = response.data.projects;
+        this.projects = response.data.projects.data;
+        this.currentPage = response.data.projects.current_page;
+        this.lastPage = response.data.projects.last_page;
       })
       .catch((error) => {
         console.error(error);
