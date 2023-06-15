@@ -38,7 +38,11 @@ export default {
                 </p>
                 <p> <strong>View Link: </strong><a :href="project.view_link" target="_blank">{{ project.view_link }}</a>
                 </p>
-                <p> Start on: {{ project.start_date }} </p>
+                <p> <strong> Start on: </strong> {{ project.start_date }} </p>
+                <ul class="d-flex list-unstyled">
+                    <li class="me-2"><strong>Technologies: </strong></li>
+                    <li v-for="technology in project.technologies" class="me-2"> {{ technology.name }}</li>
+                </ul>
             </div>
         </div>
     </div>
