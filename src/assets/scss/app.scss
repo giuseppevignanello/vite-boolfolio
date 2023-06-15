@@ -6,3 +6,50 @@ img {
     scale: 1.1;
     cursor: pointer;
 }
+
+#story-animation {
+    position: relative;
+    height: 165px;
+    background: rgb(32, 188, 255);
+
+}
+
+
+.me {
+    position: absolute;
+    bottom: 55%;
+    left: 25px;
+    height: 50px;
+    animation: walk 6s linear forwards;
+
+}
+
+.destination {
+    position: absolute;
+    bottom: 4%;
+}
+
+.sicilia {
+    left: 5%;
+
+}
+
+.bologna {
+    left: 40%;
+
+}
+
+.barcelona {
+    right: 5%;
+
+}
+
+@keyframes walk {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(1500%);
+    }
+}

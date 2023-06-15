@@ -27,8 +27,9 @@ export default {
 </script>
 <template>
     <div>
-        <div class="card text-start">
-            <img class="card-img-top" :src="this.store.apiUrl + 'storage/' + project.image" alt="Title">
+        <div class="card align-items-center">
+            <img style="width: 500px;" class="card-img-top my-5" :src="this.store.apiUrl + 'storage/' + project.image"
+                alt="Title">
             <div class="card-body">
                 <h1 class="card-title">{{ project.title }}</h1>
                 <p class="card-text">{{ project.description }}</p>
