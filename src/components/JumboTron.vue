@@ -20,7 +20,7 @@ export default {
                         <button class="btn bg_opacity btn-lg" type="button">About me</button>
                     </router-link>
                 </div>
-                <div class="avatar d-none d-sm-block">
+                <div class="avatar d-none d-sm-block bg_header">
                     <img src="../../public/img/me.png" alt="">
                 </div>
             </div>

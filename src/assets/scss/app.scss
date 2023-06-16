@@ -73,7 +73,12 @@ a {
 }
 
 .avatar {
-
     padding-right: 10rem;
+    border: 5px solid white;
+
+    img {
+        position: relative;
+        left: -15%;
+    }
 
 }
