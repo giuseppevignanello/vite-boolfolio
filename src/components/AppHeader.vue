@@ -11,20 +11,20 @@ export default {
 
 <template>
     <div>
-        <nav class="navbar navbar-expand navbar-light bg-light justify-content-center">
+        <nav class="navbar navbar-expand navbar-light bg_header justify-content-center">
             <div class="nav navbar-nav">
                 <a class="nav-item nav-link" href="#">
-                    <router-link :to="{ name: 'home' }">
+                    <router-link class="text-white" :to="{ name: 'home' }">
                         Home
                     </router-link>
                 </a>
-                <a class="nav-item nav-link" href="#">
-                    <router-link :to="{ name: 'about' }">
+                <a class="nav-item nav-link text-white" href="#">
+                    <router-link class="text-white" :to="{ name: 'about' }">
                         About
                     </router-link>
                 </a>
-                <a class="nav-item nav-link" href="#">
-                    <router-link :to="{ name: 'contacts' }">
+                <a class="nav-item nav-link text-white" href="#">
+                    <router-link class="text-white" :to="{ name: 'contacts' }">
                         Contacts
                     </router-link>
                 </a>

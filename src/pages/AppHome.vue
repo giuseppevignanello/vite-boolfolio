@@ -29,7 +29,7 @@ export default {
 
 <template>
     <JumboTron />
-    <div class="container my-5">
+    <div class="container">
         <h1 class="text-center mb-3 text-white"> <strong> MY PROJECTS </strong></h1>
         <div class="row gx-5">
             <ProjectCard v-if="!this.store.loading" v-for="project in  this.store.projects " :title="project.title"

@@ -19,63 +19,20 @@ a {
 
 // #region utilities 
 .bg_opacity {
-    background-color: #ffffffba;
+    background-color: rgb(255 255 255 / 37%);
+}
+
+.bg_header {
+    background-color: rgb(0 0 0 / 73%);
 }
 
 // #endregion utilities 
 
-#story-animation {
-    position: relative;
-    height: 230px;
-    overflow: hidden;
-
-}
-
 // #endregion general
 
 
-.me {
-    position: absolute;
-    bottom: 29%;
-    left: 25px;
-    height: 50px;
-    width: 90%;
-    animation: walk 6s linear forwards;
-
-}
-
-.destination {
-    position: absolute;
-    bottom: 4%;
-}
-
-.sicilia {
-    left: 0;
-    bottom: -52%;
-}
-
-.bologna {
-    left: 46%;
-    bottom: -38%
-}
-
-.barcelona {
-    right: 2%;
-    bottom: -40%
-}
-
-.destination_text {
-    margin-top: 3.5rem;
-    margin-left: -6rem;
-}
-
-
-@keyframes walk {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(100%);
-    }
+.line {
+    height: 25px;
+    width: 100px;
+    border-top: 1px dashed black;
 }

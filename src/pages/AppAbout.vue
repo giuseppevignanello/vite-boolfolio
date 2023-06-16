@@ -20,7 +20,7 @@ export default {
 
 <template>
     <div>
-        <MyStory class="d-none d-md-block" />
+        <MyStory />
         <MyStack />
     </div>
 </template>
