@@ -1,21 +1,42 @@
 @use "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
-.technology:hover,
-img {
-    scale: 1.1;
-    cursor: pointer;
+// #region general
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(255, 216, 155);
+    background: linear-gradient(90deg, rgba(255, 216, 155, 1) 9%, rgba(25, 84, 123, 1) 100%);
 }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+// #region utilities 
+.bg_opacity {
+    background-color: #ffffffba;
+}
+
+// #endregion utilities 
 
 #story-animation {
     position: relative;
-    height: 165px;
+    height: 230px;
     overflow: hidden;
+
 }
+
+// #endregion general
 
 
 .me {
     position: absolute;
-    bottom: 55%;
+    bottom: 29%;
     left: 25px;
     height: 50px;
     width: 90%;
@@ -30,21 +51,21 @@ img {
 
 .sicilia {
     left: 0;
-    bottom: -58%;
+    bottom: -52%;
 }
 
 .bologna {
-    left: 40%;
-    bottom: -42%
+    left: 46%;
+    bottom: -38%
 }
 
 .barcelona {
     right: 2%;
-    bottom: -46%
+    bottom: -40%
 }
 
 .destination_text {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     margin-left: -6rem;
 }
 

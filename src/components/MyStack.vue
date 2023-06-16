@@ -34,13 +34,14 @@ export default {
 
 <template>
     <div>
-        <h2 class="text-center">My Stack</h2>
+
         <div class="container mt-4">
-            <div class="card p-5 shadow">
+            <div class="card p-5 shadow bg_opacity">
+                <h2 class="text-center">My Stack</h2>
                 <ul class="d-flex list-unstyled flex-wrap justify-content-center">
-                    <li class="technology" v-for="technology in this.technologies">
+                    <li class="technology my-3" v-for="technology in this.technologies">
                         <div class="me-5">
-                            <img class="text-center" style="width: 120px; height: 80px;"
+                            <img class="text-center" style="width: 100px; height: 100px;"
                                 :src="'http://127.0.0.1:8000/storage/' + technology.image" alt="">
                             <p class="text-center"> <strong>{{ technology.name }} </strong> </p>
                         </div>

@@ -31,12 +31,12 @@ export default {
     <div class="buttons d-flex justify-content-center">
 
         <div class="d-grid gap-2 mx-2">
-            <button type="button" name="" id="" class="btn btn-primary"> <i @click="prevPage"
+            <button type="button" name="" id="" class="btn bg_opacity"> <i @click="prevPage"
                     class="fa-solid fa-arrow-left"></i></button>
         </div>
 
         <div class="d-grid gap-2 mx-2">
-            <button type="button" name="" id="" class="btn btn-primary">
+            <button type="button" name="" id="" class="btn bg_opacity">
 
                 <i @click="nextPage" class="fa-solid fa-arrow-right"></i> </button>
         </div>
