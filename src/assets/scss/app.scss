@@ -10,11 +10,6 @@ img {
     position: relative;
     height: 165px;
     overflow: hidden;
-    background-image: url(../../../public/img/skyline.png);
-    background-size: 30% 107%;
-    background-attachment: local;
-    background-color: #deffff;
-
 }
 
 
@@ -47,6 +42,12 @@ img {
     right: 2%;
     bottom: -46%
 }
+
+.destination_text {
+    margin-top: 4rem;
+    margin-left: -6rem;
+}
+
 
 @keyframes walk {
     0% {

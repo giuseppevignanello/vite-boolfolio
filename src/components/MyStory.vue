@@ -12,19 +12,26 @@ export default {
 
 <template>
     <div>
-
+        <h2>My Story</h2>
         <div id="story-animation">
-            <div class="destination sicilia">
+            <div class="destination sicilia d-flex">
                 <img style="width: 300px;" src="../../public/img/sicily.png" alt="">
-                <!-- <img class="flag_sicily" style="width: 100px;" src="../../public/img/flag.png" alt=""> -->
+                <h5 class="destination_text ">Sicily</h5>
+
             </div>
-            <div class="destination bologna">
+            <div class="destination bologna d-flex">
                 <img style="width: 300px;" src="../../public/img/bologna.png" alt="">
-                <!-- <img class="flag_bologna" style="width: 100px;" src="../../public/img/flag.png" alt=""> -->
+
+                <h5 class="destination_text">Bologna</h5>
+
+
             </div>
-            <div class="destination barcelona">
+            <div class="destination barcelona d-flex">
                 <img style="width: 300px;" src="../../public/img/barcelona.png" alt="">
-                <!-- <img class="flag_barcelona" style="width: 100px;" src="../../public/img/flag.png" alt=""> -->
+
+                <h5 class="destination_text">Barcelona</h5>
+
+
             </div>
             <div class="me">
                 <img style="width: 50px;" src="../../public/img/my_avatar.png" alt="">
