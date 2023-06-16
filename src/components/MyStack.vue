@@ -40,7 +40,7 @@ export default {
                 <ul class="d-flex list-unstyled flex-wrap justify-content-center">
                     <li class="technology" v-for="technology in this.technologies">
                         <div class="me-5">
-                            <img class="text-center" style="width: 100px;"
+                            <img class="text-center" style="width: 120px; height: 80px;"
                                 :src="'http://127.0.0.1:8000/storage/' + technology.image" alt="">
                             <p class="text-center"> <strong>{{ technology.name }} </strong> </p>
                         </div>

@@ -1,6 +1,5 @@
 @use "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
-
 .technology:hover,
 img {
     scale: 1.1;
@@ -10,7 +9,11 @@ img {
 #story-animation {
     position: relative;
     height: 165px;
-    background: rgb(32, 188, 255);
+    overflow: hidden;
+    background-image: url(../../../public/img/skyline.png);
+    background-size: 30% 107%;
+    background-attachment: local;
+    background-color: #deffff;
 
 }
 
@@ -20,6 +23,7 @@ img {
     bottom: 55%;
     left: 25px;
     height: 50px;
+    width: 90%;
     animation: walk 6s linear forwards;
 
 }
@@ -30,18 +34,18 @@ img {
 }
 
 .sicilia {
-    left: 5%;
-
+    left: 0;
+    bottom: -58%;
 }
 
 .bologna {
     left: 40%;
-
+    bottom: -42%
 }
 
 .barcelona {
-    right: 5%;
-
+    right: 2%;
+    bottom: -46%
 }
 
 @keyframes walk {
@@ -50,6 +54,6 @@ img {
     }
 
     100% {
-        transform: translateX(1500%);
+        transform: translateX(100%);
     }
 }
