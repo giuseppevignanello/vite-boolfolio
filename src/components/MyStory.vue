@@ -16,7 +16,7 @@ export default {
     <div class="container py-5">
         <div>
             <h2 class="display-5 fw-bold">My Story</h2>
-            <div class="col-md-8 fs-4">
+            <div>
                 <div class="d-flex flex-column flex-sm-row justify-content-between text-white">
                     <div class="d-flex align-items-center">
                         <h3 class:>Sicily</h3>
@@ -44,15 +44,14 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="born">
-            <p>🚩 I was born in Sicily in 1997</p>
-        </div>
-        <div class="study">
-            <p>🚩 I studied philosophy at the University of Bologna <br>
+        <div class="text d-flex row row-cols-1 row-cols-sm-3 flex-column flex-sm-row">
+
+            <p class="born">🚩 I was born in Sicily in 1997</p>
+
+            <p class="study">🚩 I studied philosophy at the University of Bologna <br>
                 and web development at Boolean Academy </p>
-        </div>
-        <div class="live">
-            <p>🚩I currently live in Barcelona </p>
+
+            <p class="live">🚩I currently live in Barcelona </p>
         </div>
 
 
