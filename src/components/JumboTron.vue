@@ -21,7 +21,7 @@ export default {
                     </router-link>
                 </div>
                 <div class="avatar bg_header my-2">
-                    <img src="../../public/img/me.png" alt="">
+                    <img class="me" src="../../public/img/me.png" alt="">
                 </div>
             </div>
         </div>

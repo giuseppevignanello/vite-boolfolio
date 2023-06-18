@@ -58,13 +58,22 @@ a {
     }
 }
 
+.tech:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
+.card-img-top {
+    object-fit: cover;
+}
 
 .avatar {
+    position: relative;
     padding-right: 4rem;
     border: 5px solid white;
 
     img {
+        animation: shake 1s forwards;
         position: relative;
         left: -15%;
     }
@@ -85,6 +94,7 @@ a {
 }
 
 .live {
+    text-align: end;
     opacity: 0;
     transform: translateY(-200px);
     animation: liveEntrance 1s ease 7s 1 normal forwards;
@@ -218,5 +228,27 @@ a {
         animation-timing-function: ease-out;
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-20px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }

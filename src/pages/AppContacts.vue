@@ -13,7 +13,7 @@ export default {
     <div>
         <div class="container mt-5">
             <div class="card p-4 bg_opacity">
-                <h1 class="text-white text-center"> <strong> CONTACT ME! </strong></h1>
+                <h1 class="display-5 fw-bold text-center"> <strong> CONTACT ME! </strong></h1>
                 <form action="">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
