@@ -31,7 +31,7 @@ export default {
             <div class="card bg-transparent border-0 align-items-center">
                 <img style="width: 500px;" class="card-img-top my-5" :src="this.store.apiUrl + 'storage/' + project.image"
                     alt="Title">
-                <div class="card-body">
+                <div class="card-body bg_opacity rounded">
                     <h1 class="card-title">{{ project.title }}</h1>
                     <p class="card-text">{{ project.description }}</p>
                     <p v-if="project.status == 'pending'">👨‍💻🚧In progress</p>
