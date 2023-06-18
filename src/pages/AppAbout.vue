@@ -20,6 +20,7 @@ export default {
 
 <template>
     <div>
+        <h1 class="display-5 fw-bold text-center pt-5">About me </h1>
         <MyStory />
         <MyStack />
     </div>

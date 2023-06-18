@@ -37,7 +37,7 @@ export default {
 
         <div class="container mt-4">
             <div class="card p-5 shadow bg_opacity">
-                <h2 class="text-center text-white"><strong>MY TECH STACK</strong></h2>
+                <h2 class="display-5 fw-bold">My tech stack</h2>
                 <ul class="d-flex list-unstyled flex-wrap justify-content-center">
                     <li class="technology my-3" v-for="technology in this.technologies">
                         <div class="me-5">
