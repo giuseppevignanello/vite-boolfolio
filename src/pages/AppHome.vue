@@ -31,7 +31,7 @@ export default {
     <JumboTron />
     <div class="container">
         <h1 class="text-center mb-3 text-white"> <strong> MY PROJECTS </strong></h1>
-        <div class="mb-3 w-25 m-auto">
+        <div class="mb-5 w-25 m-auto">
             <label for="types" class="form-label">Select type</label>
             <select class="form-select" name="types" id="types">
                 <option selected>All</option>

@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-    <div class="container py-5">
+    <div class="container py-3">
         <div class="my_story card p-4 bg_opacity">
             <div>
                 <h2 class="display-5 fw-bold">My Story</h2>

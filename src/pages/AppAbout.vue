@@ -2,12 +2,14 @@
 <script>
 import MyStack from '../components/MyStack.vue';
 import MyStory from '../components/MyStory.vue';
+import OtherThings from '../components/OtherThings.vue';
 
 export default {
     name: 'AppAbout',
     components: {
         MyStack,
-        MyStory
+        MyStory,
+        OtherThings
     },
     data() {
 
@@ -23,6 +25,7 @@ export default {
         <h1 class="display-5 fw-bold text-center pt-5">About me </h1>
         <MyStory />
         <MyStack />
+        <OtherThings />
     </div>
 </template>
 
