@@ -15,19 +15,19 @@ export default {
             <h4>Follow me!</h4>
             <div class="social d-flex align-items-center justify-content-center my-3">
                 <div class="mx-2">
-                    <a href="https://www.facebook.com/giuseppe.vignanello" class="text-white"> <i
+                    <a href="https://www.facebook.com/giuseppe.vignanello" target="_blank" class="text-white"> <i
                             class="fa-brands fa-facebook fa-xl"></i></a>
                 </div>
                 <div class="mx-2">
-                    <a href="https://www.instagram.com/vignanello/" class="text-white"> <i
+                    <a href="https://www.instagram.com/vignanello/" target="_blank" class="text-white"> <i
                             class="fa-brands fa-instagram fa-xl"></i></a>
                 </div>
                 <div class="mx-2">
-                    <a href="https://www.linkedin.com/in/giuseppe-vignanello-91b31020b/" class="text-white"> <i
-                            class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/giuseppe-vignanello-91b31020b/" target="_blank" class="text-white">
+                        <i class="fa-brands fa-linkedin fa-xl"></i></a>
                 </div>
                 <div class="mx-2">
-                    <a href="https://github.com/giuseppevignanello" class="text-white"> <i
+                    <a href="https://github.com/giuseppevignanello" target="_blank" class="text-white"> <i
                             class="fa-brands fa-github fa-xl"></i></a>
                 </div>
             </div>
