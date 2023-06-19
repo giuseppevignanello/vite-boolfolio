@@ -68,14 +68,16 @@ a {
 }
 
 .avatar {
+    overflow-y: clip;
     position: relative;
     padding-right: 4rem;
     border: 5px solid white;
 
     img {
-        animation: shake 1s forwards;
+        animation: wobble 2s ease 0s 1 normal forwards;
         position: relative;
         left: -15%;
+        bottom: -5%
     }
 
 }
@@ -231,24 +233,30 @@ a {
     }
 }
 
-@keyframes shake {
-    0% {
-        transform: translateX(0);
+@keyframes wobble {
+
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
     }
 
-    25% {
-        transform: translateX(-20px);
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
     }
 
-    50% {
-        transform: translateX(0);
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
     }
 
     75% {
-        transform: translateX(-20px);
-    }
-
-    100% {
-        transform: translateX(0);
+        transform: translateX(-6px) rotate(-1.2deg);
     }
 }
