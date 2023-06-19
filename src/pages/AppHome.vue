@@ -31,6 +31,15 @@ export default {
     <JumboTron />
     <div class="container">
         <h1 class="text-center mb-3 text-white"> <strong> MY PROJECTS </strong></h1>
+        <div class="mb-3 w-25 m-auto">
+            <label for="types" class="form-label">Select type</label>
+            <select class="form-select" name="types" id="types">
+                <option selected>All</option>
+                <option value="">Front End</option>
+                <option value="">Back End</option>
+                <option value="">Full Stack</option>
+            </select>
+        </div>
         <div class="row">
             <ProjectCard v-if="!this.store.loading" v-for="project in  this.store.projects " :title="project.title"
                 :slug="project.slug" :image="'http://127.0.0.1:8000/storage/' + project.image" :type="project.type.name" />
