@@ -20,7 +20,7 @@ export default {
                 <div>
                     <div class="d-flex flex-column flex-sm-row justify-content-between text-white">
                         <div class="d-flex align-items-center">
-                            <h3 class:>Sicily</h3>
+                            <h3>Sicily</h3>
                             <img class="mb-2 ms-2" style="width: 30px" src=" ../../public/img/lemon.png" alt="lemon">
 
                         </div>
@@ -48,7 +48,7 @@ export default {
             </div>
             <div class="text d-flex row row-cols-1 row-cols-sm-3 flex-column flex-sm-row">
 
-                <p class="born">🚩 I was born in Sicily in 1997</p>
+                <p class="born">🚩 I was born in Sicily</p>
 
                 <p class="study">🚩 I studied philosophy at the University of Bologna <br>
                     and web development at Boolean Academy </p>
