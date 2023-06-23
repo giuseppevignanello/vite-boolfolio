@@ -111,6 +111,8 @@ a {
 }
 
 
+// #region mystory_animations
+
 @keyframes bornEntrance {
     0% {
         animation-timing-function: ease-in;
@@ -268,3 +270,6 @@ a {
         transform: translateX(-6px) rotate(-1.2deg);
     }
 }
+
+
+// #endregion mystory_animations
