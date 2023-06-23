@@ -3,21 +3,21 @@
 import axios from 'axios';
 
 export default {
+    name: "AppContacts",
     data() {
 
-
         return {
-            axios,
             name: '',
             email: '',
             message: '',
             errors: {},
             loading: false,
-            success: false
+            success: false,
+            errors: {}
         }
     },
     methods: {
-        submitForm() {
+        sendForm() {
             this.loading = true;
             const data = {
                 name: this.name,
@@ -25,12 +25,19 @@ export default {
                 message: this.message
             }
 
+            this.errors = {};
+
             axios.post('http://127.0.0.1:8000/api/contacts', data)
                 .then(response => {
-                    if (!response.data.succes) {
-                        this.errors = response.data.errors
+                    this.success = response.data.success;
+                    if (!this.success) {
+                        this.errors = response.data.errors;
+                    } else {
+                        this.name = '';
+                        this.email = '';
+                        this.message = '';
                     }
-                    console.log(response);
+                    this.loading = false;
                 })
                 .catch(error => {
                     console.log(error);
@@ -41,34 +48,48 @@ export default {
 </script>
 
 <template>
-    <div>
-        <div class="container mt-5">
-            <div class="card p-4 bg_opacity">
-                <h1 class="display-5 fw-bold text-center"> <strong> CONTACT ME! </strong></h1>
-                <form action="" @submit.prevent="submitForm()">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" name="name" id="name" class="form-control" aria-describedby="nameHelper"
-                            v-model="name">
-                        <small id="nameHelper" class="text-muted">Type your full name here</small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" name="email" id="email" class="form-control" aria-describedby="emailHelper"
-                            v-model="email">
-                        <small id="emailHelper" class="text-muted">Type your email here</small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" name="message" id="message" rows="8" v-model="message"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn bg_header text-white">Send</button>
-                </form>
+    <section class="contact_me py-5">
+        <div class="inner-wrapper">
+            <div class="container text-center">
+                <h2 class="text-uppercase">contact me</h2>
+                <div v-if="success" class="alert alert-success text-start" role="alert">
+                    Messaggio inviato con successo!
+                </div>
+                <div class="row">
+                    <form @submit.prevent="sendForm()" class="col-12 text-start">
+                        <div class="mb-3">
+                            <input class="border-0 border-bottom form-control" :class="{ 'is-invalid': errors.name }"
+                                type="text" name="name" id="name" placeholder="Name" v-model="name">
+                            <p v-for="(error, index) in errors.name" :key="`message-error-${index}`"
+                                class="invalid-feedback">
+                                {{ error }}
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <input class="border-0 border-bottom form-control" :class="{ 'is-invalid': errors.email }"
+                                type="text" name="email" id="email" placeholder="Email" v-model="email">
+                            <p v-for="(error, index) in errors.email" :key="`message-error-${index}`"
+                                class="invalid-feedback">
+                                {{ error }}
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="border-0 border-bottom form-control" :class="{ 'is-invalid': errors.message }"
+                                name="message" id="message" cols="30" rows="10" placeholder="Message"
+                                v-model="message"></textarea>
+                            <p v-for="(error, index) in errors.message" :key="`message-error-${index}`"
+                                class="invalid-feedback">
+                                {{ error }}
+                            </p>
+                        </div>
+                        <button class="btn btn-lg btn-primary text-white" type="submit" :disabled="loading">{{ loading ?
+                            'Sending...' : 'Send'
+                        }}</button>
+                    </form>
+                </div>
             </div>
-
         </div>
-    </div>
+    </section>
 </template>
 
 
