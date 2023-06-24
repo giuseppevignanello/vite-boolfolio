@@ -4,6 +4,7 @@ import AppAbout from "./pages/AppAbout.vue";
 import AppContacts from "./pages/AppContacts.vue";
 import SingleProject from "./pages/SingleProject.vue";
 import NotFound from "./pages/NotFound.vue";
+import PrivacyPolicy from "./pages/PrivacyPolicy.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -22,6 +23,11 @@ const router = createRouter({
       path: "/contacts",
       name: "contacts",
       component: AppContacts,
+    },
+    {
+      path: "/privacy-policy",
+      name: "privacy-policy",
+      component: PrivacyPolicy,
     },
     {
       path: "/projects/:slug",

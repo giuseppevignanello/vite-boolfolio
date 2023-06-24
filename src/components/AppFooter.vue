@@ -24,7 +24,12 @@ export default {
                 </div>
             </div>
             <div class="copyright">
-                Mady by Giuseppe Vignanello
+                <p> Made by Giuseppe Vignanello
+                    <br>
+                    <router-link class="text-white" :to="{ name: 'privacy-policy' }">
+                        <a href=""> Privacy Policy
+                        </a> </router-link>
+                </p>
             </div>
         </div>
     </div>
