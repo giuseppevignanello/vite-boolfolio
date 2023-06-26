@@ -44,7 +44,7 @@ export default {
                             <div class="me-5 tech">
                                 <div class="d-flex justify-content-center">
                                     <img style="width: 100px; height: 100px;"
-                                        :src="'http://127.0.0.1:8000/storage/' + publishing.image" alt="">
+                                        :src="'https://api.giuseppevignanello.com/storage/' + publishing.image" alt="">
                                 </div>
                                 <p class="text-center"> <strong>{{ publishing.name }} </strong> <br>
                                     {{ publishing.location }} <br>
