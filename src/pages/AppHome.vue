@@ -49,7 +49,7 @@ export default {
     <div class="container">
         <h1 class="text-center mb-3 text-white"> <strong> MY PROJECTS </strong></h1>
         <div class="mb-5 w-25 m-auto">
-            <form action="" @change="selectType()">
+            <!-- <form action="" @change="selectType()">
                 <div class="d-flex gap-3">
 
                     <div class="input">
@@ -61,7 +61,7 @@ export default {
                     </div>
                 </div>
 
-            </form>
+            </form> -->
         </div>
         <div class="row">
             <ProjectCard v-if="!this.store.loading" v-for="project in  this.store.projects " :title="project.title"
