@@ -42,7 +42,7 @@ export default {
                     <li class="technology my-3" v-for="technology in this.technologies">
                         <div class="me-5 tech">
                             <img class="text-center" style="width: 100px; height: 100px;"
-                                :src="'http://127.0.0.1:8000/storage/' + technology.image" alt="">
+                                :src="'https://api.giuseppevignanello.com/storage/' + technology.image" alt="">
                             <p class="text-center"> <strong>{{ technology.name }} </strong> </p>
                         </div>
                     </li>
