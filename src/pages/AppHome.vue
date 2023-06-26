@@ -65,7 +65,8 @@ export default {
         </div>
         <div class="row">
             <ProjectCard v-if="!this.store.loading" v-for="project in  this.store.projects " :title="project.title"
-                :slug="project.slug" :image="'http://127.0.0.1:8000/storage/' + project.image" :type="project.type.name" />
+                :slug="project.slug" :image="'https://api.giuseppevignanello.com//storage/' + project.image"
+                :type="project.type.name" />
 
             <AppLoader v-else />
 

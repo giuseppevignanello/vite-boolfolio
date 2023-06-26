@@ -27,7 +27,7 @@ export default {
 
             this.errors = {};
 
-            axios.post('http://127.0.0.1:8000/api/contacts', data)
+            axios.post('https://api.giuseppevignanello.com/api/contacts', data)
                 .then(response => {
                     this.success = response.data.success;
                     if (!this.success) {
