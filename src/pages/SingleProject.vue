@@ -31,7 +31,7 @@ export default {
             <div class="card bg-transparent border-0 align-items-center">
                 <img style="width: 500px;" class="card-img-top my-5" :src="this.store.apiUrl + 'storage/' + project.image"
                     alt="Title">
-                <div class="card-body bg_opacity rounded">
+                <div class="card-body bg_opacity rounded m-auto project_body">
                     <h1 class="card-title">{{ project.title }}</h1>
                     <p class="card-text">{{ project.description }}</p>
                     <p v-if="project.status == 'pending'">👨‍💻🚧In progress</p>
@@ -44,8 +44,11 @@ export default {
                     <ul class="d-flex list-unstyled">
                         <li class="me-2"><strong>Technologies: </strong></li>
                         <li v-for="technology in project.technologies" class="me-2">
-                            <img style="width: 50px; height: 50px;"
-                                :src="'http://127.0.0.1:8000/storage/' + technology.image" alt="">
+                            <div class="d-flex">
+                                <img style="height: 50px; object-fit: contain;"
+                                    :src="'https://api.giuseppevignanello.com/storage/' + technology.image" alt="">
+                            </div>
+
                         </li>
                     </ul>
                 </div>
