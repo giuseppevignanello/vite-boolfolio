@@ -90,6 +90,19 @@ a {
 
 }
 
+.avatar_404 {
+    border: 5px solid white;
+    overflow-y: clip;
+    position: relative;
+    padding-right: 4rem;
+
+    img {
+        position: relative;
+        left: 0%;
+        bottom: -10%
+    }
+}
+
 .project_card:hover {
     transform: scale(1.1);
 }
