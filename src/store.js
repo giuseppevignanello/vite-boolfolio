@@ -2,7 +2,7 @@ import { reactive } from "vue";
 import axios from "axios";
 
 export const store = reactive({
-  // apiUrl: "https://api.giuseppevignanello.com/",
+  apiUrl: "https://api.giuseppevignanello.com/",
   ProjectsPath: "api/projects",
   projects: [],
   currentPage: 1,
