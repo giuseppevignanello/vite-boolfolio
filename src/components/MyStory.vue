@@ -17,7 +17,7 @@ export default {
             <div>
                 <h2 class="display-5 fw-bold">My Story</h2>
                 <div>
-                    <div class="d-flex flex-column flex-sm-row justify-content-between text-white">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between">
                         <div class="d-flex align-items-center">
                             <h3>Sicily</h3>
                             <img class="mb-2 ms-2" style="width: 30px" src=" ../../public/img/lemon.png" alt="lemon">
