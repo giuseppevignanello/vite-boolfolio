@@ -38,9 +38,10 @@ export default {
         <div class="container py-3">
             <div class="card p-5 shadow bg_opacity">
                 <h2 class="display-5 fw-bold">My tech stack</h2>
-                <ul class="d-flex list-unstyled flex-wrap justify-content-center">
+                <ul
+                    class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 list-unstyled flex-wrap justify-content-center">
                     <li class="technology my-3" v-for="technology in this.technologies">
-                        <div class="me-5 tech">
+                        <div class="tech d-flex flex-column align-items-center">
                             <img class="text-center" style="width: 100px; height: 100px;"
                                 :src="'https://api.giuseppevignanello.com/storage/' + technology.image" alt="">
                             <p class="text-center"> <strong>{{ technology.name }} </strong> </p>
