@@ -1,11 +1,17 @@
 
 <script>
+import MyStack from './MyStack.vue';
 export default {
+    components: {
+        MyStack
+    },
     data() {
 
 
-        return {}
-    },
+        return {
+
+        }
+    }
 
 }
 </script>
@@ -22,8 +28,9 @@ export default {
                         <router-link :to="{ name: 'about' }">
                             <button class="btn bg_opacity btn-lg" type="button">About me</button>
                         </router-link>
+
                     </div>
-                    <div class="avatar bg_header my-3 col-12 col-lg-6 d-flex">
+                    <div class="avatar bg_header my-3 col-12 col-lg-6 d-flex h-50">
                         <img class="me col-sm-6 col-md-7 d-none col-lg-6 d-sm-block" src="../../public/img/me.png" alt="">
                         <div class="text-white d-flex align-items-center">
                             <p class="code_text my-3">
@@ -44,6 +51,7 @@ export default {
                         </div>
                     </div>
                 </div>
+                <MyStack />
             </div>
         </div>
     </div>
