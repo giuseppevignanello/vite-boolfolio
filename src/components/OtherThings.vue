@@ -39,7 +39,7 @@ export default {
                 <h2 class="display-5 fw-bold">Other Things</h2>
                 <h5> I love reading and writing and I collaborate with some publishing projects</h5>
                 <ul class="d-flex list-unstyled flex-wrap justify-content-center">
-                    <li class="technology my-3" v-for="publishing in  this.publishings ">
+                    <li class="my-3" v-for="publishing in  this.publishings ">
                         <a class="text-dark" :href="publishing.website" target="_blank">
                             <div class="me-5 tech">
                                 <div class="d-flex justify-content-center">
