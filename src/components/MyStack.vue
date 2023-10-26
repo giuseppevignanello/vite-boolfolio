@@ -41,8 +41,7 @@ export default {
                 <h2 class="display-5 fw-bold">My tech stack</h2>
                 <ul
                     class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 list-unstyled flex-wrap justify-content-around">
-                    <li class="technology my-4 displayBox" v-for="technology in this.technologies" data-aos="fade"
-                        data-aos-duration="1000">
+                    <li class="technology my-4 displayBox" v-for="technology in this.technologies">
                         <div class="tech d-flex flex-column align-items-center">
                             <img class="text-center tech_icon" style="width: 90px; height: 90px; "
                                 :src="'https://api.giuseppevignanello.com/storage/' + technology.image" alt="">
