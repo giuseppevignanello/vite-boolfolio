@@ -28,7 +28,7 @@ export default {
 <template>
     <div>
         <div class="container">
-            <div class="card bg-transparent border-0 align-items-center text-white">
+            <div class="card bg-transparent border-0 align-items-center">
                 <img style="width: 500px;" class="card-img-top my-5" :src="this.store.apiUrl + 'storage/' + project.image"
                     alt="Title">
                 <div class="card-body bg_opacity rounded m-auto project_body">
@@ -36,10 +36,10 @@ export default {
                     <p class="card-text">{{ project.description }}</p>
                     <p v-if="project.status == 'pending'">👨‍💻🚧In progress</p>
                     <p v-else-if="project.status == 'completed'">✅ Completed</p>
-                    <p> <strong>Repo Link: </strong><a class="text-warning" :href="project.repo_link" target="_blank">{{
+                    <p> <strong>Repo Link: </strong><a class="text-primary" :href="project.repo_link" target="_blank">{{
                         project.title }} Repo</a>
                     </p>
-                    <p> <strong>View Link: </strong><a class="text-warning" :href="project.view_link" target="_blank">{{
+                    <p> <strong>View Link: </strong><a class="text-primary" :href="project.view_link" target="_blank">{{
                         project.title }}
                             View</a>
                     </p>
