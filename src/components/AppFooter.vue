@@ -24,12 +24,10 @@ export default {
                 </div>
             </div>
             <div class="copyright">
-                <p> Made by Giuseppe Vignanello
-                    <br>
-                    <router-link class="text-white" :to="{ name: 'privacy-policy' }">
-                        <a href=""> Privacy Policy
-                        </a> </router-link>
-                </p>
+                <router-link class="text-white" :to="{ name: 'privacy-policy' }">
+                    <a href="" class="text-white"> Privacy Policy
+                    </a> </router-link>
+
             </div>
         </div>
     </div>

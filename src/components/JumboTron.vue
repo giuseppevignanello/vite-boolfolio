@@ -23,15 +23,14 @@ export default {
                 <div class="row">
                     <div class="text col-12 col-lg-6">
                         <h1 class="display-5 fw-bold">Hi, I'm Peppe</h1>
-                        <p class="fs-3">I'm an italian junior fullstack developer based in Barcelona
+                        <p class="fs-3">I'm an Italian Fullstack Developer based in Barcelona
                         </p>
                         <router-link :to="{ name: 'about' }">
                             <button class="btn bg_opacity btn-lg" type="button">About me</button>
                         </router-link>
 
                     </div>
-                    <div class="avatar bg_header my-3 col-12 col-lg-6 d-flex h-50">
-                        <img class="me col-sm-6 col-md-7 d-none col-lg-6 d-sm-block" src="../../public/img/me.png" alt="">
+                    <div class="avatar bg_header ps-3 my-3 col-12 col-lg-6 d-flex h-50">
                         <div class="text-white d-flex align-items-center">
                             <p class="code_text my-3">
                                 <span class="first_line"><span class="text-primary"> let</span>

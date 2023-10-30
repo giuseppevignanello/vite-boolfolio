@@ -47,7 +47,7 @@ export default {
 <template>
     <JumboTron />
     <div class="container">
-        <h1 class="text-center mb-3 text-white"> <strong> MY PROJECTS </strong></h1>
+        <h1 class="text-center mb-3"> <strong> MY PROJECTS </strong></h1>
         <div class="mb-5 w-25 m-auto">
             <form action="" @change="selectType()">
                 <div class="d-flex gap-3">
