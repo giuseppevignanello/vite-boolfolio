@@ -14,8 +14,8 @@ export default {
 
 <template>
     <div>
-        <div class="p-5 mb-3 rounded-3">
-            <div class="container py-5">
+        <div class="p-5 rounded-3">
+            <div class="container">
                 <div class="row">
                     <div class="text col-12 col-lg-6">
                         <h1 class="display-5 fw-bold">Hi, I'm Peppe</h1>
