@@ -1,10 +1,6 @@
 
 <script>
-import MyStack from './MyStack.vue';
 export default {
-    components: {
-        MyStack
-    },
     data() {
 
 
@@ -50,7 +46,6 @@ export default {
                         </div>
                     </div>
                 </div>
-                <MyStack />
             </div>
         </div>
     </div>

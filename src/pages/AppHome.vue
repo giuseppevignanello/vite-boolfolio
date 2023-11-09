@@ -6,6 +6,7 @@ import ProjectCard from '../components/ProjectCard.vue'
 import PageButtons from "../components/PageButtons.vue"
 import JumboTron from "../components/JumboTron.vue"
 import axios from "axios"
+import MyStack from "../components/MyStack.vue"
 
 
 export default {
@@ -14,7 +15,8 @@ export default {
         ProjectCard,
         AppLoader,
         PageButtons,
-        JumboTron
+        JumboTron,
+        MyStack
     },
     data() {
         return {
@@ -73,6 +75,7 @@ export default {
 
         </div>
         <PageButtons />
+        <MyStack></MyStack>
 
 
     </div>
