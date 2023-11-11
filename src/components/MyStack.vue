@@ -37,14 +37,13 @@ export default {
     <div>
 
         <div class="container py-3">
-            <div class="card p-5 shadow bg_opacity">
+            <div class="card p-3 shadow bg_opacity">
                 <h2 class="display-5 fw-bold">My tech stack</h2>
-                <ul class="row row-cols-3 row-cols-sm-2 row-cols-lg-8 list-unstyled flex-wrap justify-content-around">
-                    <li class="technology my-4 displayBox" v-for="technology in this.technologies">
-                        <div class="tech d-flex flex-column align-items-center">
-                            <img class="text-center tech_icon" style="width: 90px; height: 90px; "
+                <ul class="row row-cols-3 list-unstyled justify-content-around">
+                    <li class="technology displayBox" v-for="technology in this.technologies">
+                        <div class="tech d-flex flex-column align-items-center my-2">
+                            <img class="text-center tech_icon"
                                 :src="'https://api.giuseppevignanello.com/storage/' + technology.image" alt="">
-                            <!-- <p class="text-center tech_text mt-2"> <strong>{{ technology.name }} </strong> </p> -->
                         </div>
                     </li>
                 </ul>

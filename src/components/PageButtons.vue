@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-    <div class="buttons d-flex justify-content-center">
+    <div class="buttons d-flex justify-content-center mb-5">
 
         <div class="d-grid gap-2 mx-2">
             <button type="button" name="" id="" class="btn bg_opacity"> <i @click="prevPage"

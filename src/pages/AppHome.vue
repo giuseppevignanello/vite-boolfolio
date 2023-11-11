@@ -7,6 +7,7 @@ import PageButtons from "../components/PageButtons.vue"
 import JumboTron from "../components/JumboTron.vue"
 import axios from "axios"
 import MyStack from "../components/MyStack.vue"
+import OtherThings from "../components/OtherThings.vue"
 
 
 export default {
@@ -16,7 +17,8 @@ export default {
         AppLoader,
         PageButtons,
         JumboTron,
-        MyStack
+        MyStack,
+        OtherThings
     },
     data() {
         return {
@@ -75,8 +77,36 @@ export default {
 
         </div>
         <PageButtons />
-        <MyStack></MyStack>
+        <div class="d-md-flex mt-">
+            <MyStack></MyStack>
+            <div id="about" class="card p-3 shadow bg_opacity col-md-6 m-3">
+                <h2 class="display-5 fw-bold">My Story</h2>
+                <div class=" d-flex flex-column justify-content-around h-100">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div class="story_image">
+                            <img src="../../public/img/lemon.png" alt="">
+                        </div>
+                        <h3>🚩 I was born in Sicily</h3>
 
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center">
+                        <h3>🚩 I studied philosophy at the University of Bologna and web development at Boolean Academy</h3>
+                        <div class="story_image">
+                            <img class="story_image" src="../../public/img/tortellino.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center gap-2">
+                        <div class="story_image">
+                            <img class="story_image" src="../../public/img/bravas.png" alt="">
+                        </div>
+                        <h3>🚩 I currently live in Barcelona</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <OtherThings></OtherThings>
 
     </div>
 </template>

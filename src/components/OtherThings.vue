@@ -35,7 +35,7 @@ export default {
     <div>
 
         <div class="container py-3">
-            <div class="card p-5 shadow bg_opacity">
+            <div class="card p-4 shadow bg_opacity">
                 <h2 class="display-5 fw-bold">Other Things</h2>
                 <h5> I love reading and writing and I collaborate with some publishing projects</h5>
                 <ul class="d-flex list-unstyled flex-wrap justify-content-center">

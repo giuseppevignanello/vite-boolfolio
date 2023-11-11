@@ -17,13 +17,10 @@ export default {
         <div class="p-5 rounded-3">
             <div class="container">
                 <div class="row">
-                    <div class="text col-12 col-lg-6">
+                    <div class="text col-12 col-lg-6 mt-5">
                         <h1 class="display-5 fw-bold">Hi, I'm Peppe</h1>
-                        <p class="fs-3">I'm an Italian Fullstack Developer based in Barcelona
+                        <p class="fs-2">I'm an Italian Fullstack Developer based in Barcelona
                         </p>
-                        <router-link :to="{ name: 'about' }">
-                            <button class="btn bg_opacity btn-lg" type="button">About me</button>
-                        </router-link>
 
                     </div>
                     <div class="avatar bg_header ps-3 my-3 col-12 col-lg-6 d-flex h-50">

@@ -359,10 +359,18 @@ a {
 }
 
 .tech_icon {
+    width: 60%;
+    height: 60%;
     object-fit: contain;
 }
 
-.technology {
-    width: 150px;
-    height: 100px;
+.story_image {
+    width: 30%;
+    height: 70%;
+}
+
+.story_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
