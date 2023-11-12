@@ -48,7 +48,7 @@ export default {
 </script>
 
 <template>
-    <section id="contacts" class="contact_me py-5 w-50 m-auto">
+    <section id="contacts" class="contact_me py-5 w-75 m-auto">
         <div class="inner-wrapper">
             <div class="container text-center">
                 <h2 class="text-uppercase">contact me</h2>

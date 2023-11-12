@@ -37,6 +37,18 @@ a {
     font-weight: 700;
 }
 
+.photo {
+    aspect-ratio: 1;
+    width: 25%;
+
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 @keyframes typewriter {
     from {
         width: 0;
