@@ -13,7 +13,7 @@ export default {
 
 <template>
     <div class="d-md-flex mb-5">
-        <div class=" ps-3 my-3 col-12 col-lg-6 d-flex h-50">
+        <div class="d-none d-md-block ps-3 my-3 col-12 col-lg-6 d-flex h-50">
             <div class="d-flex align-items-center">
                 <p class="code_text my-3">
                     <span class="first_line"><span class="text-primary"> let</span>
