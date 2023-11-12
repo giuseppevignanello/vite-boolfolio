@@ -21,10 +21,8 @@ export default {
                 <a class="nav-item nav-link text-white" href="#about">
                     About
                 </a>
-                <a class="nav-item nav-link text-white" href="#">
-                    <router-link class="text-white" :to="{ name: 'contacts' }">
-                        Contacts
-                    </router-link>
+                <a class="nav-item nav-link text-white" href="#contacts">
+                    Contacts
                 </a>
 
             </div>

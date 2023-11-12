@@ -8,6 +8,8 @@ import JumboTron from "../components/JumboTron.vue"
 import axios from "axios"
 import MyStack from "../components/MyStack.vue"
 import OtherThings from "../components/OtherThings.vue"
+import MyStory from "../components/MyStory.vue"
+import AppContacts from "../components/AppContacts.vue"
 
 
 export default {
@@ -18,7 +20,9 @@ export default {
         PageButtons,
         JumboTron,
         MyStack,
-        OtherThings
+        OtherThings,
+        MyStory,
+        AppContacts
     },
     data() {
         return {
@@ -77,30 +81,10 @@ export default {
 
         </div>
         <PageButtons />
-        <div class="d-md-flex">
-            <MyStack></MyStack>
-            <div id="about" class="card p-3 shadow bg_opacity col-md-6 m-3 p-4">
-                <h2 class="display-5 fw-bold">My Story</h2>
-                <div class=" d-flex flex-column justify-content-around h-100">
-                    <div class="d-flex justify-content-around align-items-center">
-                        <h2>🚩 I was born in Sicily</h2>
-                    </div>
-                    <div class="d-flex justify-content-around align-items-center ms-5">
-                        <h2>🚩 I studied philosophy at the University of Bologna and web development at
-                            Boolean Academy</h2>
-                    </div>
-
-                    <div class="d-flex justify-content-around align-items-center gap-2">
-                        <h2>🚩 I worked in the publishing industry</h2>
-                    </div>
-                    <div class="d-flex justify-content-around align-items-center ms-5">
-                        <h2 class="col-5">🚩 I currently live in Barcelona</h2>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        <MyStack></MyStack>
+        <MyStory></MyStory>
         <OtherThings></OtherThings>
+        <AppContacts></AppContacts>
 
     </div>
 </template>

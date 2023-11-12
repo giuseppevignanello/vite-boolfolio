@@ -38,21 +38,27 @@ export default {
             <div class="card p-4 shadow bg_opacity">
                 <h2 class="display-5 fw-bold">Other Things</h2>
                 <h5> I love reading and writing and I collaborate with some publishing projects</h5>
-                <ul class="d-flex list-unstyled flex-wrap justify-content-center">
+                <ul class="d-flex list-unstyled row-cols-2 row-cols-md-3 row-cols-lg-6 flex-wrap">
+
                     <li class="my-3" v-for="publishing in  this.publishings ">
+
                         <a class="text-dark" :href="publishing.website" target="_blank">
-                            <div class="me-5 tech">
-                                <div class="d-flex justify-content-center">
-                                    <img style="width: 100px; height: 100px;"
-                                        :src="'https://api.giuseppevignanello.com/storage/' + publishing.image" alt="">
-                                </div>
+
+                            <div class="d-flex justify-content-center">
+                                <img style="width: 100px; height: 100px;"
+                                    :src="'https://api.giuseppevignanello.com/storage/' + publishing.image" alt="">
+                            </div>
+                            <div>
                                 <p class="text-center"> <strong>{{ publishing.name }} </strong> <br>
                                     {{ publishing.location }} <br>
 
                                 </p>
                             </div>
+
                         </a>
+
                     </li>
+
                 </ul>
             </div>
         </div>
