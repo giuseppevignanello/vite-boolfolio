@@ -4,8 +4,7 @@
 
 body {
     font-family: 'League Spartan', sans-serif;
-    background: rgb(255, 216, 155);
-    background: linear-gradient(90deg, rgba(255, 216, 155, 1) 9%, rgba(25, 84, 123, 1) 100%);
+    background-color: #f6f6f6;
 }
 
 img {
@@ -34,6 +33,10 @@ a {
 
 //   #endregion jumbo
 
+.my_projects_title {
+    font-weight: 700;
+}
+
 @keyframes typewriter {
     from {
         width: 0;
@@ -45,7 +48,7 @@ a {
 }
 
 .code_text {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
 }
 
 .first_line {
@@ -161,26 +164,6 @@ a {
 
 .project_card:hover {
     transform: scale(1.05);
-}
-
-.born {
-    opacity: 0;
-    transform: translateY(-200px);
-    animation: bornEntrance 1s ease 0s 1 normal forwards;
-}
-
-
-.study {
-    opacity: 0;
-    transform: translateY(-200px);
-    animation: studyEntrance 1s ease 3s 1 normal forwards;
-}
-
-.live {
-    text-align: end;
-    opacity: 0;
-    transform: translateY(-200px);
-    animation: liveEntrance 1s ease 7s 1 normal forwards;
 }
 
 
@@ -376,5 +359,5 @@ a {
 }
 
 .quote {
-    font-weight: 900;
+    font-weight: 500;
 }

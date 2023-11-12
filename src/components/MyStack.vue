@@ -53,7 +53,7 @@ export default {
                     </div>
                 </div>
                 <div class="col-md-6 d-none d-md-flex align-items-center">
-                    <p class="display-2 quote"><strong> Coding is a continuous learning journey </strong></p>
+                    <p class="display-2 quote"> Coding is a continuous learning journey</p>
                 </div>
             </div>
         </div>
