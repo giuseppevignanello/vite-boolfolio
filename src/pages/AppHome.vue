@@ -77,30 +77,24 @@ export default {
 
         </div>
         <PageButtons />
-        <div class="d-md-flex mt-">
+        <div class="d-md-flex">
             <MyStack></MyStack>
-            <div id="about" class="card p-3 shadow bg_opacity col-md-6 m-3">
+            <div id="about" class="card p-3 shadow bg_opacity col-md-6 m-3 p-4">
                 <h2 class="display-5 fw-bold">My Story</h2>
                 <div class=" d-flex flex-column justify-content-around h-100">
                     <div class="d-flex justify-content-around align-items-center">
-                        <div class="story_image">
-                            <img src="../../public/img/lemon.png" alt="">
-                        </div>
-                        <h3>🚩 I was born in Sicily</h3>
-
+                        <h2>🚩 I was born in Sicily</h2>
                     </div>
-                    <div class="d-flex justify-content-around align-items-center">
-                        <h3>🚩 I studied philosophy at the University of Bologna and web development at Boolean Academy</h3>
-                        <div class="story_image">
-                            <img class="story_image" src="../../public/img/tortellino.png" alt="">
-                        </div>
-
+                    <div class="d-flex justify-content-around align-items-center ms-5">
+                        <h2>🚩 I studied philosophy at the University of Bologna and web development at
+                            Boolean Academy</h2>
                     </div>
+
                     <div class="d-flex justify-content-around align-items-center gap-2">
-                        <div class="story_image">
-                            <img class="story_image" src="../../public/img/bravas.png" alt="">
-                        </div>
-                        <h3>🚩 I currently live in Barcelona</h3>
+                        <h2>🚩 I worked in the publishing industry</h2>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center ms-5">
+                        <h2 class="col-5">🚩 I currently live in Barcelona</h2>
                     </div>
                 </div>
             </div>

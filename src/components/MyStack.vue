@@ -37,16 +37,18 @@ export default {
     <div>
 
         <div class="container py-3">
-            <div class="card p-3 shadow bg_opacity">
+            <div class="card shadow bg_opacity p-4">
                 <h2 class="display-5 fw-bold">My tech stack</h2>
-                <ul class="row row-cols-3 list-unstyled justify-content-around">
-                    <li class="technology displayBox" v-for="technology in this.technologies">
-                        <div class="tech d-flex flex-column align-items-center my-2">
-                            <img class="text-center tech_icon"
-                                :src="'https://api.giuseppevignanello.com/storage/' + technology.image" alt="">
-                        </div>
-                    </li>
-                </ul>
+                <div>
+                    <ul class="row row-cols-3 list-unstyled justify-content-around">
+                        <li class="technology displayBox" v-for="technology in this.technologies">
+                            <div class="tech d-flex flex-column align-items-center my-2">
+                                <img class="text-center tech_icon"
+                                    :src="'https://api.giuseppevignanello.com/storage/' + technology.image" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
