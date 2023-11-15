@@ -8,6 +8,7 @@ export default {
 
         }
     },
+
 }
 </script>
 
@@ -16,19 +17,20 @@ export default {
         <div class="d-none d-md-block ps-3 my-3 col-md-6 d-flex h-50">
             <div class="d-flex align-items-center">
                 <p class="code_text my-3">
-                    <span class="first_line"><span class="text-primary"> let</span>
+                    <span class="first_line line"><span class="text-primary">
+                            let</span>
                         meHappy = <span class="text-primary">false</span>; </span>
                     <br>
-                    <span class="second_line"> <span class="text-primary">let</span> hasBooks = <span
+                    <span class="second_line line"> <span class="text-primary">let</span> hasBooks = <span
                             class="text-primary">true</span>; </span>
                     <br>
-                    <span class="third_line"> <span class="text-primary">let</span> hasCode = <span
+                    <span class="third_line line"> <span class="text-primary">let</span> hasCode = <span
                             class="text-primary">true</span>; </span><br>
-                    <span class="fourth_line"> <span class="text-primary">if</span> (hasBooks && hasCode) {
+                    <span class="fourth_line line"> <span class="text-primary">if</span> (hasBooks && hasCode) {
                     </span><br>
-                    <span class="fifth_line"> &nbsp &nbsp meHappy = <span class="text-primary">true</span>
+                    <span class="fifth_line line"> &nbsp &nbsp meHappy = <span class="text-primary">true</span>
                     </span><br>
-                    <span class="sixth_line">} </span>
+                    <span class="sixth_line line">} </span>
                 </p>
             </div>
         </div>
