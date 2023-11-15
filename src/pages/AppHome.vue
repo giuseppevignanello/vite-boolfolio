@@ -10,6 +10,7 @@ import MyStack from "../components/MyStack.vue"
 import OtherThings from "../components/OtherThings.vue"
 import MyStory from "../components/MyStory.vue"
 import AppContacts from "../components/AppContacts.vue"
+import ScrollTopButton from "../components/ScrollTopButton.vue"
 
 
 export default {
@@ -22,7 +23,8 @@ export default {
         MyStack,
         OtherThings,
         MyStory,
-        AppContacts
+        AppContacts,
+        ScrollTopButton
     },
     data() {
         return {
@@ -85,6 +87,7 @@ export default {
         <MyStory></MyStory>
         <OtherThings></OtherThings>
         <AppContacts></AppContacts>
+        <ScrollTopButton></ScrollTopButton>
 
     </div>
 </template>

@@ -6,6 +6,7 @@
     --background-light: #f6f6f6;
     --opacity: rgb(255 255 255 / 37%);
     --background-dark: rgb(0 0 0 / 73%);
+    --backgroung-primary: #0d6efd;
 }
 
 :root.dark-theme {
@@ -206,3 +207,21 @@ a {
 }
 
 //#endregion my story
+
+//#region back to top 
+.back_to_top {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    padding-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    background-color: var(--backgroung-primary);
+}
+
+
+//#endregion back to top
