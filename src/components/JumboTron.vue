@@ -13,11 +13,11 @@ export default {
 </script>
 
 <template>
-    <div class="p-4 mt-3 my-lg-5 jumbotron">
-        <div class="container">
-            <div class="d-md-flex gap-3 align-items-center justify-content-between">
+    <div class="jumbotron">
+        <div class="container h-100">
+            <div class="d-md-flex gap-3 align-items-center justify-content-between h-100">
                 <div class="text col-12 col-md-7 mt-5">
-                    <h1 class="display-2 fw-bold">Hi, I'm Giuseppe Vignanello</h1>
+                    <h1 class="display-1 fw-bold">Hi, I'm Giuseppe Vignanello</h1>
                     <p class="fs-2">an Italian Web Developer based in Barcelona
                     </p>
                     <a class="btn btn-dark" href="#contacts" role="button">Contact me</a>

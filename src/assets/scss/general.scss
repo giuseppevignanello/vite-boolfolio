@@ -13,7 +13,8 @@
 
 body {
     font-family: 'League Spartan', sans-serif;
-    background-color: var(--background-light)
+    background-color: var(--background-light);
+    height: 100%;
 }
 
 img {
@@ -32,6 +33,11 @@ a {
 
 .bg_header {
     background-color: var(--background-dark);
+}
+
+.full-height {
+    height: 100vh;
+    transition: height 0.5s ease;
 }
 
 // #endregion utilities 
