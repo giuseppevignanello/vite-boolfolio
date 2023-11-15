@@ -1,0 +1,21 @@
+.tech:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.tech_text {
+    font-size: 14px;
+}
+
+.tech_icon {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 992px) {
+    .tech_icon {
+        width: 40%;
+        height: 40%;
+    }
+}

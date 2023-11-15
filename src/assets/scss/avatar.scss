@@ -1,0 +1,28 @@
+.avatar {
+    overflow-y: clip;
+    position: relative;
+    padding-right: 4rem;
+    border: 5px solid white;
+
+    img {
+
+        animation: wobble 2s ease 0s 1 normal forwards;
+        position: relative;
+        left: -10%;
+        bottom: -5%
+    }
+
+}
+
+.avatar_404 {
+    border: 5px solid white;
+    overflow-y: clip;
+    position: relative;
+    padding-right: 4rem;
+
+    img {
+        position: relative;
+        left: 0%;
+        bottom: -10%
+    }
+}

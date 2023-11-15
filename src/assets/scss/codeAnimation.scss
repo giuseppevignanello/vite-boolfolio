@@ -1,0 +1,55 @@
+.code_text {
+    font-size: 2.2rem;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.first_line {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2s steps(40) 0s 1 normal both;
+}
+
+.second_line {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2s steps(40) 2s 1 normal both;
+}
+
+.third_line {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2s steps(40) 4s 1 normal both;
+}
+
+.fourth_line {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2s steps(40) 6s 1 normal both;
+}
+
+.fifth_line {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2s steps(40) 8s 1 normal both;
+}
+
+.sixth_line {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 4s steps(40) 10s 1 normal both;
+}

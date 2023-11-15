@@ -1,0 +1,37 @@
+:root {
+    --background-light: #f6f6f6;
+    --opacity: rgb(255 255 255 / 37%);
+    --background-dark: rgb(0 0 0 / 73%);
+    --backgroung-primary: #0d6efd;
+}
+
+:root.dark-theme {
+    --background-light: rgb(0 0 0 / 73%);
+    --opacity: rgb(255 255 255 / 37%);
+    --background-dark: #f6f6f6;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--background-light)
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+// #region utilities 
+.bg_opacity {
+    background-color: var(--opacity);
+}
+
+.bg_header {
+    background-color: var(--background-dark);
+}
+
+// #endregion utilities 

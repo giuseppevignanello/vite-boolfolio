@@ -1,0 +1,15 @@
+.my_projects_title {
+    font-weight: 700;
+}
+
+.project_body {
+    max-width: 100%;
+}
+
+.project_card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    object-fit: cover;
+}
