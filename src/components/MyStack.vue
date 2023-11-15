@@ -34,7 +34,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="technologies_section">
 
         <div class="container py-3 mb-5 overflow-hidden">
             <div class="d-md-flex gap-5">

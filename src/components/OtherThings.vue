@@ -32,7 +32,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="other_things mb-5">
 
         <div class="container py-3">
             <div data-aos="fade-down" class="card p-4 shadow bg_opacity">

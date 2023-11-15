@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-    <div class="container overflow-hidden">
+    <div class="my_story container overflow-hidden">
         <div class="d-md-flex mb-5">
             <div data-aos="fade-right" data-aos-easing="ease-out" class="d-none d-md-block ps-3 my-3 col-md-6 d-flex h-50">
                 <div class="d-flex align-items-center">

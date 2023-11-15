@@ -21,7 +21,11 @@ export default {
                         <h1 class="display-2 fw-bold">Hi, I'm Giuseppe Vignanello</h1>
                         <p class="fs-2">an Italian Web Developer based in Barcelona
                         </p>
-                        <a class="btn btn-dark" href="#contacts" role="button">Contact me</a>
+                        <div class="d-flex gap-4 align-items-center">
+                            <a class="btn btn-dark" href="#contacts" role="button">Contact me</a>
+                            <span class="scroll_down">Scroll Down <i class="fa-solid fa-angles-down"></i></span>
+                        </div>
+
                     </div>
                     <div class="d-none d-md-block col-md-5 photo">
                         <img src="../../public/img/photo.jpeg" alt="">
