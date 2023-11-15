@@ -35,12 +35,12 @@ export default {
 </script>
 
 <template>
-    <JumboTron class="full-height" />
-    <myProjects class="full-height" />
-    <MyStack class="full-height" />
-    <MyStory class="full-height" />
-    <OtherThings class="full-height" />
-    <AppContacts class="full-height" />
+    <JumboTron />
+    <myProjects />
+    <MyStack />
+    <MyStory />
+    <OtherThings />
+    <AppContacts />
     <ScrollTopButton />
 </template>
 
