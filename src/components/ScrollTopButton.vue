@@ -28,9 +28,9 @@ export default {
 </script>
 
 <template>
-    <div>
-        <div v-if="showButton" @click="scrollToTop" class="back_to_top">
-            <div>
+    <div class="not_overflow">
+        <div v-if="showButton" @click="scrollToTop" class="back_to_top not_overflow">
+            <div class="not_overflow">
                 <i class="fa-solid fa-chevron-up fa-xl text-white"></i>
             </div>
         </div>

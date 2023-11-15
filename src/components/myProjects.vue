@@ -40,7 +40,7 @@ export default {
 </script>
 
 <template>
-    <div class="my-5">
+    <div class="my_projects">
         <div class="container">
             <h2 class="text-center mb-3 display-3 my_projects_title"> MY PROJECTS </h2>
             <div class="mb-5 w-25 m-auto">

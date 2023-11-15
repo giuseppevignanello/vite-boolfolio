@@ -2,6 +2,12 @@
     font-size: 2.2rem;
 }
 
+@media screen and (max-width: 992px) {
+    .code_text {
+        font-size: 1.8rem
+    }
+}
+
 @keyframes typewriter {
     from {
         width: 0;

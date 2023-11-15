@@ -36,9 +36,9 @@ export default {
 <template>
     <div>
 
-        <div class="container py-3 mb-5">
+        <div class="container py-3 mb-5 overflow-hidden">
             <div class="d-md-flex gap-5">
-                <div class="card shadow bg_opacity p-4 col-md-6">
+                <div class="card shadow bg_opacity p-4 col-md-6" data-aos="fade-right" data-aos-easing="ease-out">
 
                     <h2 class="display-4 fw-bold">My tech stack</h2>
                     <div>
@@ -52,7 +52,7 @@ export default {
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 d-none d-md-flex align-items-center">
+                <div data-aos="fade-left" data-aos-easing="ease-out" class="col-md-6 d-none d-md-flex align-items-center">
                     <p class="display-2 quote"> Coding is a continuous learning journey</p>
                 </div>
             </div>

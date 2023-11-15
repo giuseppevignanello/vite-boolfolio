@@ -18,7 +18,8 @@ export default {
 
 </script>
 <template>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 card border-0 mb-4 bg-transparent project_card px-5 px-sm-2">
+    <div data-aos="fade-down" data-aos-easing="ease-out"
+        class="col-12 col-sm-6 col-md-4 col-lg-3 card border-0 mb-4 bg-transparent project_card px-5 px-sm-2">
         <router-link class="text-black" :to="{ name: 'single-project', params: { slug: slug } }">
             <img style="height: 140px;" :src="image" class="card-img-top border" alt="{{title}}">
             <div class="card-body bg_opacity shadow rounded-bottom">

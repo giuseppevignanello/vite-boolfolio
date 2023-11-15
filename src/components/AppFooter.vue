@@ -14,11 +14,11 @@ export default {
         <div class="text-center text-white">
             <h4>Follow me!</h4>
             <div class="social d-flex align-items-center justify-content-center my-3">
-                <div class="mx-2">
+                <div class="mx-2 not_overflow">
                     <a href="https://www.linkedin.com/in/giuseppe-vignanello-91b31020b/" target="_blank" class="text-white">
                         <i class="fa-brands fa-linkedin fa-xl"></i></a>
                 </div>
-                <div class="mx-2">
+                <div class="mx-2 not_overflow">
                     <a href="https://github.com/giuseppevignanello" target="_blank" class="text-white"> <i
                             class="fa-brands fa-github fa-xl"></i></a>
                 </div>
