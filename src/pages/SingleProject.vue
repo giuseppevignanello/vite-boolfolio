@@ -39,10 +39,6 @@ export default {
                     <p> <strong>Repo Link: </strong><a class="text-primary" :href="project.repo_link" target="_blank">{{
                         project.title }} Repo</a>
                     </p>
-                    <p> <strong>View Link: </strong><a class="text-primary" :href="project.view_link" target="_blank">{{
-                        project.title }}
-                            View</a>
-                    </p>
                     <p> <strong> Start on: </strong> {{ project.start_date }} </p>
                     <ul class="d-flex list-unstyled">
                         <li class="me-2"><strong>Technologies: </strong></li>
