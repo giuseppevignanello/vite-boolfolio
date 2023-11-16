@@ -18,10 +18,10 @@ export default {
                         Home
                     </router-link>
                 </a>
-                <a class="nav-item nav-link text-white" href="#about">
+                <a class="nav-item nav-link text-white" href="/#about">
                     About
                 </a>
-                <a class="nav-item nav-link text-white" href="#contacts">
+                <a class="nav-item nav-link text-white" href="/#contacts">
                     Contacts
                 </a>
 
