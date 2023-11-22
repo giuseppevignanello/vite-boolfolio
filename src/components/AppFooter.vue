@@ -22,6 +22,12 @@ export default {
                     <a href="https://github.com/giuseppevignanello" target="_blank" class="text-white"> <i
                             class="fa-brands fa-github fa-xl"></i></a>
                 </div>
+                <div class="mx-2 not_overflow">
+                    <a href="https://medium.com/@giuseppevignanello" target="_blank" class="text-white"> <i
+                            class="fa-brands fa-medium fa-xl"></i></a>
+                </div>
+
+
             </div>
             <div class="copyright">
                 <router-link class="text-white" :to="{ name: 'privacy-policy' }">

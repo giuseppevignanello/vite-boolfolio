@@ -60,6 +60,13 @@ export default {
                     </li>
 
                 </ul>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-dark"> <a href="https://medium.com/@giuseppevignanello" target="_blank"
+                            class="text-white text-decoration-none"> <i class="fa-brands fa-medium fa-xl"></i> Read my
+                            coding
+                            articles
+                        </a> </button>
+                </div>
             </div>
         </div>
     </div>

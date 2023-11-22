@@ -24,6 +24,9 @@ export default {
                 <a class="nav-item nav-link text-white" href="/#contacts">
                     Contacts
                 </a>
+                <a class="nav-item nav-link text-white" target="_blank" href="https://medium.com/@giuseppevignanello">
+                    Articles
+                </a>
 
             </div>
         </nav>
